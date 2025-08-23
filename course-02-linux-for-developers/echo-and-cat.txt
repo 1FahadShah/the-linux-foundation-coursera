@@ -1,0 +1,26 @@
+using $echo :
+
+$ echo line one >> myfile.txt
+$ echo line two >> myfile.txt
+$ echo line three >> myfile.txt
+
+using $cat :
+$ cat << EOF > mytestfile.txt
+> line one
+> line two
+> line three
+> EOF
+
+output :
+both of them will write
+
+    line one
+    line two
+    line three
+
+to myfile.txt(using echo) and mytestfile.txt(using cat)
+
+
+using cat to display file content in CLI:
+
+$ cat myfile.txt
